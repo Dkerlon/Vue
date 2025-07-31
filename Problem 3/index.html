@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Problem 3</title>
+</head>
+<body>
+    <div>
+        <h1>Problem 3</h1>
+        <hr>
+        <section id="main">
+            <label for="" :class="{fisrt: first_name}">Digite seu nome</label>
+            <input type="text" v-model="first_name" :class="{isDark : isDark}" @click="changeColor">
+            <label for="" :class="{last_name}">Digite seu sobrenome</label>
+            <input type="text" v-model="last_name">
+            <p>Seu nome : {{ fullname }} </p>
+            <button v-on:click="clear">Limpar</button>
+        </section>
+    </div>
+</body>
+</html>
